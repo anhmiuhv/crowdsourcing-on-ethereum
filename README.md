@@ -24,6 +24,7 @@ set up an account and connect to the Rinkeby network to be able to use this prog
 ## Code navigation
 * contracts/ : contains the contracts code in Solidity
 * src/: contains the frontend code in html and javascript
+
 `npm run dev` run a server (lite-browser) process configured by `bs-config.js` 
 
 ## Development
@@ -38,7 +39,10 @@ Then you can modify the code locally.
 Our example contract is online on Ethereum and rinkeby
 
 rinkeby: https://rinkeby.etherscan.io/address/0x244ac8ca6af07e3f5dd28bfa3c8fafcd2222628c#code
+
 Ethereum: https://etherscan.io/address/0xCe8296F1daCd7C6ECa28453f37fE15E0596CDaEA
 
 Video demo:
 https://www.youtube.com/watch?v=DNgvUu5HJRU&ab_channel=LinhHo%C3%A0ng
+
+Read our report: [report](HOW_IT_WORKS.pdf)
