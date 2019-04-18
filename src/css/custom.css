@@ -1,0 +1,7 @@
+#answerBox {
+    display: block;
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}

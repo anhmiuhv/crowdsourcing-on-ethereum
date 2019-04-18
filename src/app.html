@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Crowdsourcing on Blockchain</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container" style="width: 650px;">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="text-center">Crowdsourcing on BlockChain</h1>
+        <hr/><br/>
+        <div id="loader">
+          <p class="text-center">Loading...</p>
+        </div>
+        <div id="content" style="display: none;">
+          <table class="table">
+            <thead>
+              <tr>
+              <th scope="col">#</th>
+              <th scope="col">Answer</th>
+              <th scope="col">Account</th>
+              <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="answerList">
+            </tbody>
+          </table>
+          <p id="mystate" style="display: none"></p>
+          <hr />
+          <div>
+              <p id="summary" ></p>
+              <p id="total" ></p>
+              <p id="amount" ></p>
+              <p id="current" ></p>
+          </div>
+          <hr/>
+          <p id="accountAddress" class="text-center"></p>
+        </div>
+      </div>
+    </div>
+    <form onSubmit="App.answer(); return false;">
+      <div class="form-group">
+        <label for="textToTranslate">Answer</label>
+        <textarea rows="4" cols="50" id="textToTranslate" class="form-control" placeholder="Enter answer."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Answer</button>
+
+    </form>
+
+<!--
+    <form onSubmit="App.castVote(); return false;">
+      <div class="form-group">
+      <label for="candidatesSelect">Select Candidate</label>
+      <select class="form-control" id="candidatesSelect"></select>
+      </div>
+      <button type="submit" class="btn btn-primary">Vote</button>
+      <hr />
+    </form>
+-->
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
